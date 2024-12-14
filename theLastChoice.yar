@@ -1,12 +1,12 @@
 import "hash"
 rule locky_detect {
     meta:
-        author = theLastChoice Killer
+        author = "theLastChoice Killer"
         description = "Detects theLastChoice malware "
         date = "2024-12-2"
         version = "1.0"
     strings:
-        $theLastChoice_1 =  “GetSidSubAuthority"
+        $theLastChoice_1 =  "GetSidSubAuthority"
         $theLastChoice_2 =  "ShellExecute"
         $theLastChoice_3 = "AdjustTokenPrivileges"
         $theLastChoice_4 = "cdnverify.net"
